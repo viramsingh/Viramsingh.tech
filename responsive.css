@@ -1,0 +1,168 @@
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-left h1 {
+    font-size: 25px;
+  }
+
+  .home-left h2 {
+    font-size: 30px;
+  }
+
+  .home-right p {
+    font-size: 20px;
+  }
+
+  .home-right img {
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-container {
+    /* background-color: red; */
+    height: auto;
+    width: 85vw;
+  }
+
+  .about-container h1 {
+    text-align: center;
+    font-family: var(--font2);
+  }
+
+  .about-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .left-content {
+    justify-content: space-around;
+  }
+
+  .left-content p {
+    font-size: 17px;
+  }
+
+  .right-content img {
+    width: 300px;
+    height: 320px;
+  }
+  .brand {
+    font-style: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  @media (max-width: 800px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(0, 0, 0);
+      color: aliceblue;
+      transition: top 1s ease 0s;
+      display: none;
+    }
+
+    nav .mainMenu li {
+      padding: 5px;
+    }
+
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    nav .openMenu {
+      display: block;
+      color: var(--primary-color);
+      position: absolute;
+      right: 18px;
+    }
+
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(255, 123, 0);
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+  }
+
+  .brand {
+    /* margin: auto; */
+    margin: 0;
+    left: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .home-right img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .btn {
+    margin: 20px 0px;
+  }
+
+  .about-container {
+    height: auto;
+    width: 80vw;
+  }
+
+  .about-container h1 {
+    font-size: 25px;
+  }
+
+  .about-info {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .left-content p {
+    font-size: 17px;
+  }
+
+  .skill-container {
+    grid-template-columns: auto;
+  }
+
+  .skill {
+    width: 80vw;
+  }
+
+  .wrapper .carousel img {
+    width: calc(100% / 2);
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  .wrapper .carousel img {
+    width: 100%;
+    width: calc(100% / 1);
+    padding: 10px;
+    margin: auto;
+  }
+}
